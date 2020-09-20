@@ -1,0 +1,15 @@
+<div class= "form-group login" >
+    <form [formGroup]="loginForm" (ngSubmit)="validateUser(loginForm.value)">
+      <div class="form-group">
+      
+        <input type="text" autocomplete="off" class="form-control" placeholder="Login" formControlName="username" required />
+      </div>
+      <div class ="form-group">
+       
+        <input type="password" autocomplete="off"  class="form-control" placeholder ="Password" formControlName="password" required />
+      </div>
+      <div class ="form-group"> 
+        <button class="btn btn-primary" [disabled]="!loginForm.valid">Login</button>
+      </div>
+    </form>
+  </div>
