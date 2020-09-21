@@ -5,6 +5,8 @@ const http =  require('http').Server(app);
 const io =  require('socket.io')(http);
 const sockets = require('./socket');
 const server =  require('./listen');
+const fs = require('fs');
+
 
 const PORT = 3000;
 app.use(cors());
