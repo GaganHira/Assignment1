@@ -3,7 +3,7 @@ import { Observable } from 'rxjs';
 import { Subscription } from 'rxjs';
 import { sortBy as _sortBy } from 'lodash';
 
-import { ChatService } from '../service/chat.service';
+import { ChatService } from '../services/chat.service';
 
 @Component({
   selector: 'app-chat-interface',
